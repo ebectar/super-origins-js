@@ -1,13 +1,4 @@
-// 20180709145244
-// https://comicvine.gamespot.com/api/characters/?api_key=f3fd06140a96931f20820adb9adf0b0eb43a30a0&format=json&sort=date_last_modified&field_list=deck,description,first_appeared_in_issue,image,name,origin,real_name
-
 {
-  "error": "OK",
-  "limit": 100,
-  "offset": 0,
-  "number_of_page_results": 100,
-  "number_of_total_results": 125431,
-  "status_code": 1,
   "results": [
     {
       "deck": "Garth Ranzz is one of the three original members/founders, of the Legion, of Super-Heroes. Empowered, with the ability, to control electricity, he is called Lightning Lad.  Garth is, the twin brother of fellow legionnaire Lightning Lass, and the younger brother, of Lightning Lord.",
