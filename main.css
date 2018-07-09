@@ -1,0 +1,154 @@
+:root {
+  --dark-cape-color: rgb(208, 30, 0);
+  --medium-cape-color: rgb(246, 52, 60);
+  --light-cape-color: rgb(255, 92, 92);
+  --small-text-shadow: -1px 1px 1px var(--light-cape-color), -2px 2px 1px var(--medium-cape-color), -3px 3px 2px var(--dark-cape-color);
+  --large-shadow: -6px 6px 1px var(--light-cape-color), -14px 14px 1px var(--medium-cape-color), -22px 22px 2px var(--dark-cape-color);
+}
+
+body {
+  background: #2a94cd;
+  padding: 0;
+  margin: 0;
+  font-family: 'Abel', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+}
+
+h1 {
+  font-family: 'Bangers', sans-serif;
+  color: #fff;
+  text-shadow: var(--large-shadow);
+  text-align: center;
+  font-size: 15em;
+  padding: 2vh;
+  letter-spacing: .1em;
+}
+
+.drop-container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 5em 10em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.character-name {
+  padding-left: 4em;
+}
+
+.character-image {
+  height: 40vh;
+}
+
+h2 {
+  font-family: 'Bangers', sans-serif;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: var(--small-text-shadow);
+}
+
+h3 {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.8em;
+}
+
+.name {
+  text-align: left;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+.a-nav {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  text-shadow: -2px 2px 1px var(--light-cape-color), 2px -2px 1px var(--light-cape-color);
+}
+
+a:hover {
+  color: var(--light-cape-color);
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+
+img {
+  height: 20em;
+  align-self: center;
+}
+
+.results-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-description {
+  word-wrap: inherit;
+}
+
+
+figcaption {
+  color: rgb(255, 255, 255);
+}
+
+figure {
+  display: none;
+}
+
+.first-issue-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3em 0;
+}
+
+.issue-image {
+  float: right;
+  padding: 2em;
+}
+
+.about-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-project {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.about-developer {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4em;
+}

@@ -1,0 +1,5 @@
+{
+  "baseURL": "",
+  "integrationFolder": "cypress/integration",
+  "videoRecording": false
+}
