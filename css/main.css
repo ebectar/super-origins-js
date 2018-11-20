@@ -26,6 +26,7 @@ header {
 }
 
 h1 {
+  transform: translate(-200%, 200%);
   font-family: 'Bangers', sans-serif;
   color: #fff;
   text-shadow: var(--large-shadow);
@@ -37,12 +38,12 @@ h1 {
     fly, float;
   animation-duration:
     2s, 4s;
-  animation-delay: 4s, 6s;
+  animation-delay: 3s, 6s;
   animation-timing-function:
     ease-out, ease-in-out;
   animation-iteration-count:
     1, 5;
-   animation-fill-mode: backwards;
+/*    animation-fill-mode: foreward; */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }

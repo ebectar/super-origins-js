@@ -1,0 +1,26 @@
+{
+  "name": "super-origins-vanilla",
+  "version": "1.0.0",
+  "description": "Learn the story origins of some of the most popular superheroes!",
+  "main": "config.js",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebectar/super-origins-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebectar/super-origins-js/issues"
+  },
+  "homepage": "https://github.com/ebectar/super-origins-js#readme"
+}
