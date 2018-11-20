@@ -3,13 +3,12 @@ const dropdownItem = document.querySelector('.item')
 const resultsContainer = document.querySelector('.results-container')
 const firstAppearance = document.querySelector('.first-appearance')
 const apiKey = config.API_KEY
-const characterUrl = `https://comicvine.gamespot.com/api/characters/?api_key=${apiKey}&format=jsonp&sort=date_last_modified&field_list=deck,description,first_appeared_in_issue,image,name,origin,real_name`
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+const characterUrl = `https://comicvine.gamespot.com/api/characters/?api_key=${apiKey}&format=json&sort=date_last_modified&field_list=deck,description,first_appeared_in_issue,image,name,origin,real_name`
 const issueUrl = `https://comicvine.gamespot.com/api/issues/?api_key=${apiKey}&format=json&filter=id:`
 
 function getCharacters() {
-	fetchJsonp(characterUrl, {
-			mode: 'cors'
-		})
+	fetch(proxyUrl + characterUrl)
 		.then(response => response.json())
 		.then(data => buildCharacter(data.results))
 		.catch(error => console.log('Request failed', error))
@@ -42,7 +41,7 @@ function buildOrigin(event, data) {
 			character.classList.add('name-container')
 			resultsContainer.appendChild(character)
 			let id = data[i].first_appeared_in_issue.id
-			fetch(issueUrl + id)
+			fetch(proxyUrl + issueUrl + id)
 				.then(response => response.json())
 				.then(data => putIdInThePlace(data.results[0]))
 

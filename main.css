@@ -3,7 +3,7 @@
   --medium-cape-color: rgb(246, 52, 60);
   --light-cape-color: rgb(255, 92, 92);
   --small-text-shadow: -1px 1px 1px var(--light-cape-color), -2px 2px 1px var(--medium-cape-color), -3px 3px 2px var(--dark-cape-color);
-  --large-shadow: -6px 6px 1px var(--light-cape-color), -14px 14px 1px var(--medium-cape-color), -22px 22px 2px var(--dark-cape-color);
+  --large-shadow: -6px 6px 1px var(--light-cape-color), -14px 14px 1px var(--medium-cape-color), -20px 20px 2px var(--dark-cape-color);
 }
 
 body {
@@ -33,122 +33,60 @@ h1 {
   font-size: 15em;
   padding: 2vh;
   letter-spacing: .1em;
+  animation-name:
+    fly, float;
+  animation-duration:
+    2s, 4s;
+  animation-delay: 4s, 6s;
+  animation-timing-function:
+    ease-out, ease-in-out;
+  animation-iteration-count:
+    1, 5;
+   animation-fill-mode: backwards;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
-.drop-container {
-  width: 70vw;
-  margin: 0 auto;
+@keyframes fly {
+  0% {
+    transform: translate(-200%, 200%) skewX(-20deg);
+    text-shadow: var(--large-shadow), 20px 20px white;
+  }
+  100% {
+    transform: translate(0%);
+  }
 }
 
-.name-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  padding: 5em 10em;
-  width: 80%;
-  margin: 0 auto;
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(10px);
+    text-shadow: -4px -4px 1px var(--light-cape-color), -8px -8px 1px var(--medium-cape-color), -12px -12px 2px var(--dark-cape-color);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
 
-.character-name {
-  padding-left: 4em;
+#clouds {
+  z-index:-1;
+  position: absolute;
+  top: 30%;
 }
 
-.character-image {
-  height: 40vh;
+#front-cloud {
+ animation: upFront 2s 1 0.75s backwards;
 }
 
-h2 {
-  font-family: 'Bangers', sans-serif;
-  font-size: 4em;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  text-shadow: var(--small-text-shadow);
+#back-cloud {
+ animation: upFront 2s 1;
 }
 
-h3 {
-  font-family: 'Abel', sans-serif;
-  font-size: 1.8em;
-}
-
-.name {
-  text-align: left;
-}
-
-a {
-  color: rgb(255, 255, 255);
-}
-
-.a-nav {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.5em;
-  text-shadow: -2px 2px 1px var(--light-cape-color), 2px -2px 1px var(--light-cape-color);
-}
-
-a:hover {
-  color: var(--light-cape-color);
-}
-
-p {
-  color: rgb(255, 255, 255);
-  font-size: 1.5em;
-}
-
-img {
-  height: 20em;
-  align-self: center;
-}
-
-.results-container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.full-description {
-  word-wrap: inherit;
-}
-
-
-figcaption {
-  color: rgb(255, 255, 255);
-}
-
-figure {
-  display: none;
-}
-
-.first-issue-details {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 3em 0;
-}
-
-.issue-image {
-  float: right;
-  padding: 2em;
-}
-
-.about-container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.about-project {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 4em;
-}
-
-.about-developer {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 4em;
+@keyframes upFront {
+  0% {
+  transform: translateY(200%);}
+  100% {
+  transform: translateY(0%);}
 }
