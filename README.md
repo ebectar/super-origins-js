@@ -10,4 +10,6 @@ Originally created as a project to explore making API calls and working with dat
 - Semantic UI
 - Express.js
 
+## Authors
+**Alyssa Ebert** - [ebectar](https://github.com/ebectar)
 

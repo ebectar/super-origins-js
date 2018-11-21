@@ -1,0 +1,55 @@
+$dark-cape-color: rgb(208, 30, 0);
+$medium-cape-color: rgb(246, 52, 60);
+$light-cape-color: rgb(255, 92, 92);
+$small-text-shadow: -1px 1px 1px $light-cape-color, -2px 2px 1px $medium-cape-color, -3px 3px 2px $dark-cape-color;
+$large-shadow: -6px 6px 1px $light-cape-color, -14px 14px 1px $medium-cape-color, -20px 20px 2px $dark-cape-color;
+
+html, body {
+  margin: 0; 
+  width: 100vw;
+  font-size: 100%;
+}
+
+body {
+  background: #2a94cd;
+  padding: 0;
+  font-family: 'Abel', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Bangers', sans-serif;
+  color: #fff;
+  text-shadow: $large-shadow;
+  text-align: center;
+  font-size: 10rem;
+  padding: 2vh;
+  letter-spacing: .1rem;
+  position: relative;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.svg-container {
+  position: relative;
+  width: 100%;
+}
+
+#clouds {
+  position: absolute;
+  width: 100%;
+}
+
+#buildings {
+  position:absolute;
+  width: 100%;
+}

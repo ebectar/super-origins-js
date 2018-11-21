@@ -73,8 +73,8 @@ h1 {
 
 #clouds {
   z-index:-1;
-  position: absolute;
-  top: 30%;
+  width: 150px;
+  height: 150px;
 }
 
 #front-cloud {
@@ -91,3 +91,4 @@ h1 {
   100% {
   transform: translateY(0%);}
 }
+

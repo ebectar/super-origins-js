@@ -1,3 +1,5 @@
+import "../styles/style.scss";
+console.log('yo')
 const menu = document.querySelector('.menu')
 const dropdownItem = document.querySelector('.item')
 const resultsContainer = document.querySelector('.results-container')
