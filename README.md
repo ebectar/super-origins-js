@@ -4,7 +4,7 @@ Originally created as a project to explore making API calls and working with dat
 
 ## Technologies Used
 - Javascript
-- Sass / Gulp / Gulp-sass
+- Sass / Node-Sass / Webpack / Babel
 - Semantic UI
 - Express.js
 
