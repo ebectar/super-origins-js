@@ -37,8 +37,14 @@ h1 {
   position: relative;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  animation-name: fly;
-  animation-duration: 1s;
+  animation-name: fly, float;
+  animation-duration:
+    2s, 4s;
+  animation-delay: 0s, 2s;
+  animation-timing-function:
+    ease-out, ease-in-out;
+  animation-iteration-count:
+    1, 5;
 }
 
 .svg-container {
@@ -59,9 +65,20 @@ h1 {
 @keyframes fly {
   0% {
     transform: translate(-200%, 200%) skewX(-20deg);
-    text-shadow: $large-shadow, 20px 20px white;
   }
   100% {
     transform: translate(0%);
   }
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
