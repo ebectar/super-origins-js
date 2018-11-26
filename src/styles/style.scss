@@ -37,6 +37,8 @@ h1 {
   position: relative;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  animation-name: fly;
+  animation-duration: 1s;
 }
 
 .svg-container {
@@ -52,4 +54,14 @@ h1 {
 #buildings {
   position:absolute;
   width: 100%;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(-200%, 200%) skewX(-20deg);
+    text-shadow: $large-shadow, 20px 20px white;
+  }
+  100% {
+    transform: translate(0%);
+  }
 }
