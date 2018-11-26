@@ -1,0 +1,62 @@
+html, body {
+  margin: 0;
+  width: 100vw;
+  font-size: 100%; }
+
+body {
+  background: #2a94cd;
+  padding: 0;
+  font-family: 'Abel', sans-serif;
+  color: white; }
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+h1 {
+  font-family: 'Bangers', sans-serif;
+  color: #fff;
+  text-shadow: -6px 6px 1px #ff5c5c, -14px 14px 1px #f6343c, -20px 20px 2px #d01e00;
+  text-align: center;
+  font-size: 10rem;
+  padding: 2vh;
+  letter-spacing: .1rem;
+  position: relative;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  animation-name: fly, float;
+  animation-duration: 2s, 4s;
+  animation-delay: 0s, 2s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, 5; }
+
+.svg-container {
+  position: relative;
+  width: 100%; }
+
+#clouds {
+  position: absolute;
+  width: 100%; }
+
+#buildings {
+  position: absolute;
+  width: 100%; }
+
+@keyframes fly {
+  0% {
+    transform: translate(-200%, 200%) skewX(-20deg); }
+  100% {
+    transform: translate(0%); } }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0px); } }
+
